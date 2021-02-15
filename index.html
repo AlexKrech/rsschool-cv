@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS & Git Basics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <figure class="avatar">
+                <img src="img/MyFace.jpg" alt="My avatar" class="avatarImage">
+                <figcaption>
+                    <h1>Krech Aliaksandr</h1>
+                </figcaption>
+            </figure>
+
+            <div class="personal-data-wrapper">
+                <section class="personal-data">
+                    <h2>Contacts:</h2>
+                    <ul>
+                        <li>tel: +375333506839</li>
+                        <li>e-mail: alexkrech1997@gmail.com</li>
+                        <li>telegram: <a href="https://t.me/AlexKrech1997">https://t.me/AlexKrech1997</a> </li>
+                        <li>github: <a href="https://github.com/AlexKrech">https://github.com/AlexKrech</a> </li>
+                    </ul>
+                </section>
+
+                <section class="personal-data">
+                    <h2>About me</h2>
+                    <p>I'm a hadrworking person who want to be Web Developer (especially
+                        <em>React Developer</em>). I haven't any working experience now but my goal is do better to
+                        improve technical skill and receiving any working experience.</p>
+                </section>
+            </div>
+        </header>
+
+        <div class="border-block"></div>
+
+        <main>
+            <div class="main-wrapper">
+                <section class="skills">
+                    <h2>Skills:</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>Bootstrap</li>
+                        <li>Figma</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Code Example</h2>
+                    <div class="code">
+                        <p>
+                            <code>let list = document.querySelector(".images") <br>
+                                let prev = document.querySelector(".prev")<br>
+                                let next = document.querySelector(".next")<br>
+                                let image = document.querySelector("img")<br>
+                                let width = parseInt(getComputedStyle(image).width) * (list.children.length -
+                                3)<br>
+                                <br>
+                                prev.onclick = function () {<br>
+                                if (parseInt(getComputedStyle(list).marginLeft) + 250 > 0) {<br>
+                                list.style.marginLeft = 0 + 'px'<br>
+                                } else {<br>
+                                list.style.marginLeft = parseInt(getComputedStyle(list).marginLeft) + 250 + 'px'
+                                }
+                                }<br>
+                                <br>
+                                next.onclick = function () {<br>
+                                if (parseInt(getComputedStyle(list).marginLeft) - 250 &lt; -width) {
+                                list.style.marginLeft=-width
+                                + 'px' }<br>
+                                else { list.style.marginLeft=parseInt(getComputedStyle(list).marginLeft) - 250 +
+                                'px' }
+                                }
+                            </code>
+                        </p>
+                    </div>
+                    <p>You can see more examples <a href="https://github.com/AlexKrech">here</a> </p>
+                </section>
+
+                <section>
+                    <h2>Work experience</h2>
+                    <p>I've finished a short course on HTML/CSS basics. There are a couple of my projects in
+                        <a href="https://github.com/AlexKrech/Stepik-projects.git">this</a> repository.</p>
+                </section>
+
+                <section class="education">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>HTML, CSS on <a href="https://stepik.org/course/38218/syllabus">
+                                https://stepik.org/course/38218/syllabus</a></li>
+                        <li>Javascript on <a href="https://learn.javascript.ru">https://learn.javascript.ru</a> </li>
+                    </ul>
+                </section>
+
+
+                <section class="english-level">
+                    <h2>English level</h2>
+                    <p>
+                        A2+ according <a href="https://www.training.by">www.training.by</a> tests. I also have some
+                        experience of
+                        conversations with native speakers in <a href="https://www.cambly.com/en/?lang=ru">cambly</a>
+                        platform.
+                    </p>
+                </section>
+            </div>
+
+        </main>
+
+
+
+
+    </div>
+</body>
+
+</html>
