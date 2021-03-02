@@ -57,7 +57,7 @@ header {
 .colum {
     height: 100%;
     background: #212530;
-}
+
 
 .colum--lite {
     width: 300px;
@@ -81,6 +81,7 @@ h2,
 li,
 p {
     font-family: Montserrat;
+
 }
 
 .personal-data h1,
@@ -150,6 +151,7 @@ h2 {
 .skill__list__skill {
     width: 85px
 }
+
 
 .skill__list__quality {
     display: flex;
